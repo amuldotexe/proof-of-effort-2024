@@ -9,11 +9,12 @@ All of these will be modules invoked by this main function
 
 // module declarations
 mod f01_shadowing;
-
+mod f02_panic;
 // use modules
 use f01_shadowing::f01_shadowing;
-
+use f02_panic::f02_panic;
 fn main() {
     println!("Hello, world!");
     f01_shadowing();
+    f02_panic();
 }
